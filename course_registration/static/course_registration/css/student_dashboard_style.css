@@ -1,0 +1,75 @@
+/* student_dashboard_style.css */
+
+.custom-form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Center the whole form content */
+.custom-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label */
+form label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Input box */
+form input[type="text"] {
+    width: 300px;   /* fixed width for clean UI */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    text-align: center;   /* optional: center text inside box */
+}
+
+/* Button */
+.custom-submit-btn {
+    padding: 10px 20px;
+    background-color: #10b645;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Center button */
+.custom-form-wrapper button {
+    display: block;
+    margin: 0 auto;
+}
+
+.custom-submit-btn {
+    padding: 10px 20px;
+    background-color: #10b645;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.custom-submit-btn:hover {
+    background-color: #14731f;
+    transition: 0.2s ease-in-out;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card hr {
+    margin: 15px 0;
+}
+
