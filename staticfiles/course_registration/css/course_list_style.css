@@ -1,0 +1,19 @@
+/* course_list_style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3 {
+    margin-bottom: 1rem;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+a.btn {
+    transition: transform 0.2s ease-in-out;
+}
+
