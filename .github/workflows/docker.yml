@@ -23,7 +23,9 @@ jobs:
 
       # Step 3: Build image
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/django-app .
+        run: docker build \
+          --build-arg SECRET_KEY=${{ secrets.SECRET_KEY }} \
+          -t ${{ secrets.DOCKER_USERNAME }}/django-app .
 
       # Step 4: Push image
       - name: Push Docker image

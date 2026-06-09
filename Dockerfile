@@ -23,6 +23,9 @@ ENV PATH=/root/.local/bin:$PATH
 COPY . .
 
 # Collect static files (important for Nginx)
+ARG SECRET_KEY
+ENV SECRET_KEY=$SECRET_KEY
+
 RUN python manage.py collectstatic --noinput
 
 # Run with Gunicorn
