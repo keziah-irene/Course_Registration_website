@@ -19,4 +19,4 @@ ENV PATH=/root/.local/bin:$PATH
 
 COPY . .
 
-CMD ["gunicorn", "djangoproject.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["sh", "-c", "python manage.py collectstatic --noinput && gunicorn djangoproject.wsgi:application --bind 0.0.0.0:8000"]
